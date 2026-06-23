@@ -1,4 +1,5 @@
 const axios = require("axios");
+require("dotenv").config();
 
 // Created a Logger and gave it the axios library for sending a post request... now, made the logging middleware according to the specified rules, added error-handling as well
 const Log = async (stack, level, package_name, message) => {
@@ -17,4 +18,4 @@ const Log = async (stack, level, package_name, message) => {
   }
 };
 
-module.exports = Log;
+module.exports = { Log };
