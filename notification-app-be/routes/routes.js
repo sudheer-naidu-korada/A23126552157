@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Notification = require("../models/notification.model"); // Required the Notification schema from models 
+const Notification = require("../models/notification"); // Required the Notification schema from models 
 const { Log } = require("../../logging-middleware/logger"); // Required the logger for logging events
 
 // get for fetching all the notifications
